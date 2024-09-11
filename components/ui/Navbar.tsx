@@ -6,6 +6,7 @@ const Navbar: FunctionComponent<PropsWithChildren> = ({ children }) => {
   return (
     <div className="bg-white max-w-full min-h-48 m-6 rounded-md drop-shadow-xl">
       {children}
+      <div className="w-full">TODO: Nav buttons</div>
     </div>
   );
 };
