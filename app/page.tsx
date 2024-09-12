@@ -1,10 +1,11 @@
 import Image from "next/image";
-import Navbar from "@/components/ui/Navbar";
+import Logo from "@/components/ui/Logo";
 import logo from "../public/Skvm.png";
 import GridSmallBackground from "@/components/ui/GridSmallBackground";
 import { FlipWords } from "@/components/ui/FlipWords";
 import { FocusCards } from "@/components/ui/FocusCards";
 import { Globe } from "@/components/ui/Globe";
+import Navbar from "@/components/ui/NavBar";
 
 export default function Home() {
   const words = ["Leaders", "Innovators", "Scientists", "Doctors", "Athletes"];
@@ -32,7 +33,7 @@ export default function Home() {
       <main>
         <GridSmallBackground>
           <div className="navigationAndHeader min-w-full">
-            <Navbar>
+            <Logo>
               <div className="flex justify-center">
                 <Image
                   src={logo}
@@ -42,7 +43,10 @@ export default function Home() {
                   priority={true}
                 />
               </div>
-            </Navbar>
+            </Logo>
+            <div className="relative w-full flex items-center justify-center">
+              <Navbar />
+            </div>
           </div>
           <div className="justify-start flex items-center m-10">
             <div className="w-1/2">
