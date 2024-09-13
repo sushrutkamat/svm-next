@@ -13,9 +13,10 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div className={cn("w-4/5 mx-auto z-50 justify-center", className)}>
       <Menu setActive={setActive}>
-        <div className=" flex-1 ml-44">
-          <HoveredLink href="/">Home</HoveredLink>
-          {/* <MenuItem setActive={setActive} active={active} item="Services">
+        <div className="grid grid-cols-4 gap-4 justify-items-center w-full">
+          <div className="">
+            <HoveredLink href="/">Home</HoveredLink>
+            {/* <MenuItem setActive={setActive} active={active} item="Services">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/web-dev">Web Development</HoveredLink>
               <HoveredLink href="/interface-design">
@@ -25,10 +26,10 @@ function Navbar({ className }: { className?: string }) {
               <HoveredLink href="/branding">Branding</HoveredLink>
             </div>
           </MenuItem> */}
-        </div>
-        <div className=" flex-1  ml-44">
-          <HoveredLink href="/">Currilculum</HoveredLink>
-          {/* <MenuItem setActive={setActive} active={active} item="Products">
+          </div>
+          <div className="">
+            <HoveredLink href="/">Currilculum</HoveredLink>
+            {/* <MenuItem setActive={setActive} active={active} item="Products">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
                 title="Algochurn"
@@ -56,19 +57,20 @@ function Navbar({ className }: { className?: string }) {
               />
             </div>
           </MenuItem> */}
-        </div>
-        <div className=" flex-1">
-          <MenuItem setActive={setActive} active={active} item="Happenings">
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/hobby">Notices</HoveredLink>
-              <HoveredLink href="/individual">Events</HoveredLink>
-              <HoveredLink href="/team">News</HoveredLink>
-              <HoveredLink href="/enterprise">Calender</HoveredLink>
-            </div>
-          </MenuItem>
-        </div>
-        <div className=" flex-1  ml-56">
-          <HoveredLink href="/aboutus">About</HoveredLink>
+          </div>
+          <div className="">
+            <MenuItem setActive={setActive} active={active} item="Happenings">
+              <div className="flex flex-col space-y-4 text-sm">
+                <HoveredLink href="/hobby">Notices</HoveredLink>
+                <HoveredLink href="/individual">Events</HoveredLink>
+                <HoveredLink href="/team">News</HoveredLink>
+                <HoveredLink href="/enterprise">Calender</HoveredLink>
+              </div>
+            </MenuItem>
+          </div>
+          <div className="">
+            <HoveredLink href="/aboutus">About</HoveredLink>
+          </div>
         </div>
       </Menu>
     </div>
