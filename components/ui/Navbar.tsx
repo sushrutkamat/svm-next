@@ -4,7 +4,7 @@ import {
   HoveredLink,
   Menu,
   MenuItem,
-  ProductItem,
+  NavLink,
 } from "@/components/ui/NavBarMenu";
 import { cn } from "@/app/lib/utils";
 
@@ -15,7 +15,7 @@ function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
         <div className="grid grid-cols-4 gap-4 justify-items-center w-full">
           <div className="">
-            <HoveredLink href="/">Home</HoveredLink>
+            <NavLink href="/">Home</NavLink>
             {/* <MenuItem setActive={setActive} active={active} item="Services">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/web-dev">Web Development</HoveredLink>
@@ -28,7 +28,7 @@ function Navbar({ className }: { className?: string }) {
           </MenuItem> */}
           </div>
           <div className="">
-            <HoveredLink href="/">Currilculum</HoveredLink>
+            <NavLink href="/">Currilculum</NavLink>
             {/* <MenuItem setActive={setActive} active={active} item="Products">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
@@ -69,7 +69,7 @@ function Navbar({ className }: { className?: string }) {
             </MenuItem>
           </div>
           <div className="">
-            <HoveredLink href="/aboutus">About</HoveredLink>
+            <NavLink href="/aboutus">About</NavLink>
           </div>
         </div>
       </Menu>
